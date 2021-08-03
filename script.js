@@ -18,6 +18,12 @@ function calculation(value)
 {
     
 
+    if(equation=="Infinity")
+    {
+        equation="";
+        
+    }
+
     equation=equation+value;
      answer_field.innerHTML=equation;
     
