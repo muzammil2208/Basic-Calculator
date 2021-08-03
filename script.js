@@ -16,16 +16,23 @@ var answer=0;
 var prev=0;
 function calculation(value)
 {
-    
+    if(equation==0&&(value=="+"||value=="-"||value=="%"||value=="/"||value=="*"))
+    {
+        alert("operator cannot be at first");
+    }
 
-    if(equation=="Infinity")
+   else if(equation=="Infinity")
     {
         equation="";
         
     }
+    else
+    {
+        equation=equation+value;
+        answer_field.innerHTML=equation;
+    }
 
-    equation=equation+value;
-     answer_field.innerHTML=equation;
+  
     
 
     
