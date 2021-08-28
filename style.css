@@ -42,14 +42,21 @@ body {
   transition: background-color 500ms ease;
 }
 
+.toggle-button-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 10px;
+}
+
 .toggle-button {
   background-color: #f1f1f1;
   height: 40px;
   padding: 10px;
   width: 100px;
-  position: relative;
-  top: -280px;
-  left: 130px;
   border-radius: 10px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -183,5 +190,16 @@ body {
 
 .night-mode3 {
   background-color: #22252d;
+}
+
+@media (max-width: 560px) {
+  .main-container {
+    height: 100%;
+    width: 100%;
+    border-radius: 0px;
+  }
+  .keys-container {
+    border-radius: 15px;
+  }
 }
 /*# sourceMappingURL=style.css.map */

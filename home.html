@@ -10,6 +10,12 @@
 </head>
 <body>
     <div class="main-container">
+        <div class="toggle-button-container">
+            <div class="toggle-button">
+                <button id="night-mode" onclick="nightmode()"><i class="fas fa-moon"></i></button>
+                <button id="light-mode" onclick="lightmode()"><i class="fas fa-sun"></i></button>
+            </div>
+        </div>
         <div class="input-container">
             <div class="equation">
                 
@@ -19,10 +25,8 @@
             </div>
 
         </div>
-        <div class="toggle-button">
-            <button id="night-mode" onclick="nightmode()"><i class="fas fa-moon"></i></button>
-            <button id="light-mode" onclick="lightmode()"><i class="fas fa-sun"></i></button>
-        </div>
+   
+        
         <div class="keys-container">
             <button class="special-operation" onclick="reset()">AC</button>
             <button class="special-operation" onclick="signchange()">+/-</button>
