@@ -12,8 +12,8 @@
     <div class="main-container">
         <div class="toggle-button-container">
             <div class="toggle-button">
-                <button id="night-mode" onclick="nightmode()"><i class="fas fa-moon"></i></button>
-                <button id="light-mode" onclick="lightmode()"><i class="fas fa-sun"></i></button>
+                <button id="night-mode" id="nightmode" onclick="nightmode()"><i class="fas fa-moon"></i></button>
+                <button id="light-mode" id="lightmode" onclick="lightmode()"><i class="fas fa-sun"></i></button>
             </div>
         </div>
         <div class="input-container">
@@ -28,26 +28,26 @@
    
         
         <div class="keys-container">
-            <button class="special-operation" onclick="reset()">AC</button>
-            <button class="special-operation" onclick="signchange()">+/-</button>
-            <button class="special-operation" value="%" onclick="calculation(this.value)">%</button>
-            <button class="operator-keys" value="/" onclick="calculation(this.value)">/</button>
-            <button class="number-keys" value="7" onclick="calculation(this.value)">7</button>
-            <button class="number-keys" value="8" onclick="calculation(this.value)">8</button>
-            <button class="number-keys" value="9" onclick="calculation(this.value)">9</button>
-            <button class="operator-keys" value="*" onclick="calculation(this.value)">x</button>
-            <button class="number-keys" value="4" onclick="calculation(this.value)">4</button>
-            <button class="number-keys" value="5" onclick="calculation(this.value)">5</button>
-            <button class="number-keys" value="6" onclick="calculation(this.value)">6</button>
-            <button class="operator-keys" value="-" onclick="calculation(this.value)">-</button>
-            <button class="number-keys"value="3" onclick="calculation(this.value)">3</button>
-            <button class="number-keys"value="2" onclick="calculation(this.value)">2</button>
-            <button class="number-keys"value="1" onclick="calculation(this.value)">1</button>
-            <button class="operator-keys"value="+" onclick="calculation(this.value)">+</button>
-            <button class="number-keys" onclick="history()"><i class="fas fa-undo"></i></button>
-            <button class="number-keys" value="0" onclick="calculation(this.value)">0</button>
-            <button class="number-keys" value="." onclick="calculation(this.value)">.</button>
-            <button class="operator-keys" onclick="calculate()" >=</button>
+            <button class="special-operation" id="ac" onclick="reset()">AC</button>
+            <button class="special-operation" id="+/-" onclick="signchange()">+/-</button>
+            <button class="special-operation"  id="%" value="%" onclick="calculation(this.value)">%</button>
+            <button class="operator-keys"  id="/" value="/" onclick="calculation(this.value)">/</button>
+            <button class="number-keys"  id="7" value="7" onclick="calculation(this.value)">7</button>
+            <button class="number-keys" id="8" value="8" onclick="calculation(this.value)">8</button>
+            <button class="number-keys" id="9" value="9" onclick="calculation(this.value)">9</button>
+            <button class="operator-keys" id="*" value="*" onclick="calculation(this.value)">x</button>
+            <button class="number-keys"  id="4" value="4" onclick="calculation(this.value)">4</button>
+            <button class="number-keys" id="5" value="5" onclick="calculation(this.value)">5</button>
+            <button class="number-keys" id="6" value="6" onclick="calculation(this.value)">6</button>
+            <button class="operator-keys" id="-"" value="-" onclick="calculation(this.value)">-</button>
+            <button class="number-keys" id="3" value="3" onclick="calculation(this.value)">3</button>
+            <button class="number-keys" id="2" value="2" onclick="calculation(this.value)">2</button>
+            <button class="number-keys" id="1" value="1" onclick="calculation(this.value)">1</button>
+            <button class="operator-keys"id="+" value="+" onclick="calculation(this.value)">+</button>
+            <button class="number-keys" id="history" onclick="history()"><i class="fas fa-undo"></i></button>
+            <button class="number-keys"  id="0" value="0" onclick="calculation(this.value)">0</button>
+            <button class="number-keys" id="." value="." onclick="calculation(this.value)">.</button>
+            <button class="operator-keys" id="=" onclick="calculate()" >=</button>
         </div>
     </div>
 
