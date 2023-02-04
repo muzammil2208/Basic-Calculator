@@ -42,7 +42,7 @@ function calculation(value)
 }
 function calculate()
 {
-    answer=eval(equation);
+    answer=parseFloat(eval(equation)).toFixed(2);
     equation_field.innerHTML=equation;
     answer_field.innerHTML=answer;
     prev=equation;
