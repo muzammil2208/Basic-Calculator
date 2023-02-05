@@ -42,7 +42,8 @@ function calculation(value)
 }
 function calculate()
 {
-    answer=parseFloat(eval(equation)).toFixed(2);
+    answer=parseFloat(eval(equation)).toFixed(2).replace(/\.0+$/, '');
+    
     equation_field.innerHTML=equation;
     answer_field.innerHTML=answer;
     prev=equation;
